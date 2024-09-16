@@ -20,7 +20,7 @@ variables:
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
 
-stages:
+# stages:
 - stage: Build
   displayName: Build stage
   jobs:
@@ -29,7 +29,7 @@ stages:
     pool:
       vmImage: $(vmImageName)
 
-    steps:
+#     steps:
     - task: Maven@4
       displayName: 'Maven Package'
       inputs:
